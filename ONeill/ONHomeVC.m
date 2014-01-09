@@ -225,6 +225,8 @@
         UINavigationController *vc=(UINavigationController *)viewController;
         ONSearchVC *svc=(ONSearchVC *)[vc.viewControllers objectAtIndex:0];
         svc.titleString=@"TRENDING ITEMS";
+        filteredArr=self.categoryList;
+        svc.listArray=[filteredArr mutableCopy];
         
         //TODO load trending items in to the array and load it in the categories list
         
